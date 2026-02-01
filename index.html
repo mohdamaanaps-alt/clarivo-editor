@@ -4,42 +4,104 @@
   <meta charset="UTF-8">
   <title>Clarivo YT Editor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* General Styles */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background: #0f172a;
-      color: #fff;
+      color: #f1f5f9;
       text-align: center;
     }
+
     header {
-      padding: 40px 20px;
+      padding: 50px 20px 30px 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
     }
-    h1 { font-size: 32px; }
-    .price { color: #22c55e; font-size: 26px; }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 10px 0;
+      color: #22c55e;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+
+    .price {
+      color: #22c55e;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* Box/Card Styles */
     .box {
-      background: #020617;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 12px;
+      background: #1e293b;
+      margin: 20px auto;
+      padding: 25px 20px;
+      border-radius: 15px;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
     }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #f1f5f9;
+    }
+
+    /* Button Styles */
     a.button {
       display: inline-block;
-      margin: 10px;
-      padding: 14px 22px;
+      margin: 12px 5px;
+      padding: 14px 24px;
       background: #22c55e;
-      color: #000;
+      color: #0f172a;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
     }
+
+    a.button:hover {
+      background: #16a34a;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media(max-width: 480px) {
+      .box {
+        width: 90%;
+        padding: 20px;
+      }
+
+      h1 { font-size: 28px; }
+      .price { font-size: 24px; }
+      p { font-size: 16px; }
+    }
+
+    /* Footer */
+    footer {
+      margin: 30px 0;
+      font-size: 16px;
+      color: #94a3b8;
+    }
+
   </style>
 </head>
 <body>
 
 <header>
   <h1>Clarivo YT Editor</h1>
-  <p>Professional YouTube Video Editing</p>
+  <p>Professional YouTube Video Editing Services</p>
   <p class="price">Starting at just ₹299</p>
 </header>
 
@@ -60,8 +122,11 @@
   <p>Instagram: @Mohdamaan4020</p>
 </div>
 
-<p>🟢 Limited Offer Available</p>
+<footer>
+  🟢 Limited Offer Available
+</footer>
 
 </body>
 </html>
 
+  
